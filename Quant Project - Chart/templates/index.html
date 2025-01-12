@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <title>Stock Analysis</title>
+</head>
+<body>
+    <h1>Stock Analysis Application</h1>
+    <form action="/results" method="post">
+        <label for="ticker">Stock Ticker:</label>
+        <input type="text" id="ticker" name="ticker" required><br>
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br>
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required><br>
+
+        <label for="indicators">Select Indicators:</label><br>
+        <input type="checkbox" name="indicators" value="EMA"> EMA<br>
+        <input type="checkbox" name="indicators" value="RSI"> RSI<br>
+        <input type="checkbox" name="indicators" value="MACD"> MACD<br>
+        <input type="checkbox" name="indicators" value="Bollinger Bands"> Bollinger Bands<br>
+
+        <label for="alerts">Set Alert Conditions (e.g., df['RSI'] > 70):</label><br>
+        <textarea id="alerts" name="alerts"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
