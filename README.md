@@ -19,7 +19,7 @@ This **Stock Prediction Web Application** leverages machine learning models and 
 - **Machine Learning**: Scikit-learn, Random Forest
 - **Data Handling**: Pandas, Yahoo Finance API
 - **Visualization**: Plotly
-- **Web Styling**: HTML, CSS (Custom Styled)
+- **Web Styling**: HTML, JS, CSS (Custom Styled)
 
 ---
 
@@ -29,27 +29,6 @@ This **Stock Prediction Web Application** leverages machine learning models and 
 - Python 3.x installed
 - Virtual environment (recommended for dependency management)
 
-### Steps to Set Up the Project
-
-1. **Clone the Repository**  
-   First, clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/stock-prediction.git
-   cd stock-prediction
-   ```
-
-2. **Set up a Python Virtual Environment**  
-   If you don’t have a virtual environment set up, do so using the following commands:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-
-3. **Install Dependencies**  
-   Install the required Python libraries using the `requirements.txt` file:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ---
 
@@ -155,12 +134,6 @@ We welcome contributions to the project! If you have an idea to improve the appl
 
 ---
 
-## License
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
-
----
-
 ## Acknowledgments
 
 - **Flask** for creating the web framework.
@@ -169,5 +142,3 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for m
 - **Scikit-learn** for machine learning model training and evaluation.
 
 ---
-
-This improved version makes the documentation more comprehensive, structured, and developer-friendly, with detailed explanations on how to set up, run, and contribute to the project.
